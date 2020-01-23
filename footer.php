@@ -96,7 +96,12 @@
 				</div>
 		  <?php } elseif ( 'onecolumns' === $footer_columns ) { ?>
 				<div class="small-12 columns">
-					<?php dynamic_sidebar( 'footer1' ); ?>
+					<div class="footer__item footer__main">
+						<?php dynamic_sidebar( 'footer1' ); ?>
+					</div>
+					<div class="footer__item footer__sub">
+						<?php dynamic_sidebar( 'footer2' ); ?>
+					</div>
 				</div>
 		  <?php } elseif ( 'sixcolumns' === $footer_columns ) { ?>
 				<div class="small-6 medium-4 large-2 columns">
