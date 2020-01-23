@@ -8,7 +8,6 @@ Template: werkstatt
 Version: 1.0.0
 Tags: single-column, dark theme, list theme, type theme
 */
-
 @import url("css/reset.css");
 @import url("css/normalize.css");
 @import url("css/fonts.css");
@@ -20,19 +19,33 @@ Tags: single-column, dark theme, list theme, type theme
  **************UNIVERSAL***************
  *************************************/
 .main__title {}
-.main__subtitle p {
-	font-family: var(--rt--semi);
+.main__subtitle {
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+    opacity: 0.075;
+	user-select: none; 
+	pointer-events: none; }
+.main__subtitle h2 {
+	font-size: calc(125px + (200 - 125) * ((99vw - 700px) / (1900 - 700)));
+	font-family: var(--rt-extra);
 	text-align: center;
-	text-transform: uppercase; }
+	text-transform: lowercase; }
 .main__copy {}
+.main__button span {
+	padding: 0 35%; }
 
 /**************************************
  *****************HERO*****************
  *************************************/
+.hero.row.row-o-full-height {
+	min-height: 90vh;
+	/*overflow: hidden;*/
+	background-color: #ececec; }
 .hero .hero__main {
-    padding: 0;
-    left: 0;
-    margin-left: auto; }
+    padding: 4% 0 0 0; }
 .hero .hero__main .hero__main--subtitle h4,
 .hero .hero__main .hero__main--title h1,
 .hero .hero__main .hero__main--copy p {
@@ -46,7 +59,8 @@ Tags: single-column, dark theme, list theme, type theme
 	font-family: var(--rt--medium);
     font-size: 20px; }
 .hero .hero__sub {
-	margin-top: -15%; }
+	position: absolute;
+    right: 0; }
 .hero .hero__sub .hero__sub--slider {
 	width: 65%;
 	margin: 0 auto;
@@ -62,19 +76,50 @@ Tags: single-column, dark theme, list theme, type theme
 	overflow: visible;
     object-fit: cover; }
 .hero .scroll-bottom {
-	bottom: 5%; }
+	bottom: -45px; }
+.hero .scroll-bottom,
+.scroll-bottom.style1:before,
+.scroll-bottom.style1>div {
+	height: 100px; }
+.scroll-bottom.style1>div:before,
+.scroll-bottom.style1>div:after {
+	bottom: 0; }
+/*.scroll-bottom.style1>div:before {
+	right: 1px; }
+.scroll-bottom.style1>div:after {
+	left: 1px; }*/
+.scroll-bottom.style1:hover:before {
+    -moz-transform: scaleY(.85);
+    -ms-transform: scaleY(.85);
+    -webkit-transform: scaleY(.85);
+	transform: scaleY(.85); }
+.scroll-bottom.style1:hover>div:before,
+.scroll-bottom.style1:hover>div:after {
+	bottom: 15%; }
+
 
 /**************************************
  ****************INTRO*****************
  *************************************/
 .intro {
-	margin: 20vh 0; }
+	position: relative;
+	margin: 20vh 0;
+	/*margin: 20vh 0 5vh 0;*/
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    float: none; }
 .intro .intro__main {
 	text-align: center;
-	margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0;
+    float: none; }
+.intro .intro__main .intro__main--title h4 {
+	text-align: center; }
 .intro .intro__main .intro__main--subtitle {
-	margin-bottom: 5px; }
-.intro .intro__main .intro__main--subtitle p {}
+	top: 50%; }
+/*.intro .intro__main .intro__button span {
+	padding: 0 30%; }*/
 
 /**************************************
  *****************WORK*****************
@@ -82,20 +127,67 @@ Tags: single-column, dark theme, list theme, type theme
 .work {
 	margin-bottom: 10vh;
 	text-align: center; }
-.work__main .work__main--item .work__item--link h2 {
-	line-height: 1.1em;
-	text-align: left;
+.work__main .work__main--item .work__item--link .work__link--title {
 	overflow: visible;
+	min-width: 100%;
     width: 100%; }
+.work__main .work__main--item .work__item--link .work__link--title h2 {
+	line-height: 1.1em;
+	text-transform: capitalize;
+	margin-left: -4px;
+	text-align: left;
+	width: 100%;
+    max-width: 100%; }
+/*#portfolio-43 { margin-top:10%; }  /* Unisys */
+/*#portfolio-47 { margin-top:0; }  /* Dialogue */
+/*#portfolio-52 { margin-top:0; }  /* Enautics */
+/*#portfolio-49 { margin-top:15%; }  /* Kaleida */
+/*#portfolio-55 { margin-top:10%; } /* Business */
+/*#portfolio-62 { margin-top:0; } /* Segall */
+.work__main .work__button {
+	margin-top: 5%; }
 
 /**************************************
  ************TESTIMONIALS**************
  *************************************/
+.testimonials {
+	position: relative;
+	overflow: hidden; }
 .testimonials__main {
 	margin: 0 auto; }
+.testimonials__main--subtitle {
+	top: 150%; }
+.thb-testimonials.style1 blockquote p {
+	text-align: center; }
 
 /**************************************
- *****************BLOG*****************
+ ***************CONTACT****************
  *************************************/
-.blog {
-	display: none }
+.contact {
+	position: relative;
+	text-align: center;
+	margin: 15vh 0; }
+.contact__main--subtitle {
+	display: none; 
+	top: 150%; }
+.contact__main--item {
+	text-align: left; }
+.contact__main--item.col-6 {
+	width: 48%;
+	display: inline-block; }
+.contact__main--name {
+	float: left; }
+.contact__main--email {
+	float: right; }
+.contact__main--item.col-12 {
+	width: 100%; }
+.contact__main--submit input[type="submit"] {
+	color: black;
+    text-transform: uppercase;
+    background: transparent; }
+.wpcf7 .contact__main--submit span.ajax-loader {
+	width: unset; }
+.wpcf7 .contact__main--submit span.ajax-loader.is-active {
+	width: 16px; }
+
+
