@@ -1,2 +1,38 @@
 .header:before {
-	background: transparent; }
+	background: rgba(255,255,255,0.5); }
+
+.footer {
+	position: relative;
+	min-height: 60vh; }
+
+.footer__main {
+	width: 35%;
+    margin: 0 auto; }
+.footer__main .textwidget {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    resize: horizontal; }
+.footer__main a {
+	width: auto;
+    height: 100%;
+	margin: 0 auto;
+    align-self: flex-end;}
+.footer__main a img {
+	max-width: 40px;
+    max-height: 40px;
+	vertical-align: bottom; }
+
+.footer__sub {
+	position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    right: 0;
+    left: 0; }
+.footer__sub p {
+	text-align: center; }
