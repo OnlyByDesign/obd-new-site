@@ -75,8 +75,8 @@
 			<div class="thb-placeholder first work__item work__item--first work__item--big"><?php the_post_thumbnail($image_size); ?></div>
 			<div class="thb-placeholder second work__item work__item--second work__item--big"><?php echo wp_get_attachment_image($hover_id, $image_size); ?></div>
 			<a href="<?php echo esc_url( $permalink ); ?>" class="<?php echo esc_attr(implode(' ', $link_class)); ?>">
-				<h3><?php the_title(); ?></h3>
-				<aside class="thb-categories"><span><?php echo esc_html($categories); ?></span></aside>
+				<div class="work__link--title"><h2><?php the_title(); ?></h2></div>
+				<aside class="work__link--cat thb-categories"><span><?php echo esc_html($categories); ?></span></aside>
 			</a>
 		<?php } else { ?>
 			<div class="thb-placeholder first work__item work__item--first work__item--small">
@@ -86,7 +86,7 @@
 				<?php } ?>
 			</div>
 			<a href="<?php echo esc_url( $permalink ); ?>" class="work__item--link <?php echo esc_attr(implode(' ', $link_class)); ?>">
-				<h3 class="work__link--title"><?php the_title(); ?></h3>
+				<div class="work__link--title"><h2><?php the_title(); ?></h2></div>
 				<aside class="work__link--cat thb-categories"><span><?php echo esc_html($categories); ?></span></aside>
 				<?php if ($thb_hover_style === 'thb-corner-arrow') { ?>
 					<?php get_template_part('assets/img/svg/hover-arrow.svg'); ?>
