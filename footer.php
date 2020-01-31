@@ -152,14 +152,11 @@
 	<?php do_action( 'thb_wrapper_end' ); ?>
 </div> <!-- End #wrapper -->
 
-<?php
-
-	/* Always have wp_footer() just before the closing </body>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to reference JavaScript files.
-	 */
-	 wp_footer();
-?>
+<?php wp_footer(); ?>
 <?php do_action( 'thb_after_wrapper' ); ?>
 </body>
+<!--<script src="http://onlyby.design/wp-content/themes/werkstatt-child/js/gsap.min.js"></script>
+<script src="http://onlyby.design/wp-content/themes/werkstatt-child/js/scrollMagic.min.js"></script>-->
+<script src="http://onlyby.design/wp-content/themes/werkstatt-child/js/main.js"></script>
+<script src="http://onlyby.design/wp-content/themes/werkstatt-child/js/polyfill.min.js"></script>
 </html>
