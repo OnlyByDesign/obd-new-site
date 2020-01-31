@@ -66,6 +66,7 @@ h4 {
 h5 {
 	font-family:var(--rt--bold);
 	font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1900 - 300)));
+	letter-spacing: .025em;
 }
 h6 {
   font-family: var(--rt--regular);
@@ -75,7 +76,7 @@ h6 {
 }
 p {
   font-family: var(--rt--regular);
-  font-size: 18px;
+  font-size: calc(16px + (18 - 16) * ((99vw - 700px) / (1900 - 700)));
   letter-spacing: .11rem;
   font-style: normal;
   line-height: 36px;
@@ -137,6 +138,10 @@ html, body {
   -ms-transition: all .15s;
   transition: all .15s;
   transition-timing-function: cubic-bezier(0.25, 0.25, 0.005, 1);
+}
+.hide {
+	display: none;
+	visibility: hidden;
 }
 
 /*Responsive*/
