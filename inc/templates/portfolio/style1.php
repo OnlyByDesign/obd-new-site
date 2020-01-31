@@ -35,7 +35,7 @@
 	if (!empty($terms)) {
 		foreach ($terms as $term) { $cats .= ' thb-cat-'.strtolower($term->slug); }
 	}
-
+	$class[] = 'work__main--item';
 	$class[] = 'columns';
 	$class[] = 'type-portfolio';
 	$class[] = $thb_masonry !== 'custom' ? $thb_size : false;
@@ -70,7 +70,7 @@
 	}
 ?>
 <div <?php post_class($class); ?> id="portfolio-<?php the_ID(); ?>">
-	<div class="portfolio-holder work__main--item <?php $slug ?>"<?php if ($thb_masonry && $thb_masonry !== 'custom') { ?> style="<?php echo esc_attr('padding-bottom: '.$aspect_ratio.';'); ?>"<?php } ?>>
+	<div class="portfolio-holder <?php $slug ?>"<?php if ($thb_masonry && $thb_masonry !== 'custom') { ?> style="<?php echo esc_attr('padding-bottom: '.$aspect_ratio.';'); ?>"<?php } ?>>
 		<?php if ($thb_hover_style === 'thb-image-hover') { ?>
 			<div class="thb-placeholder first work__item work__item--first work__item--big"><?php the_post_thumbnail($image_size); ?></div>
 			<div class="thb-placeholder second work__item work__item--second work__item--big"><?php echo wp_get_attachment_image($hover_id, $image_size); ?></div>
