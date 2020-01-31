@@ -1,27 +1,28 @@
 const $ = jQuery;
-function parallaxScroll(el, num) {
-	let offset = window.pageYOffset;
-	el.style.transform = "translateY(" + (offset * num + "px") + ')';
-};
-function replaceScrollBottom() {
-	var target = document.querySelector(".scroll-bottom");
-	//
+const parallaxScroll = (parallax) => {
+	Object.values(parallax).forEach(function(current) {
+		window.addEventListener( "scroll", ()=> document.getElementsByClassName(current[0])[0].style.transform = "translateY(" + (window.pageYOffset * current[1] + "px") + ')');
+	});
 };
 
-$(document).ready(function() {
-	if (document.getElementsByClassName(".page-id-598")) {
-		document.querySelector(".intro__button").setAttribute("download", "BY-Resume");
-	};
-	window.addEventListener("scroll", function() {
-		parallaxScroll( document.querySelector(".intro__main--subtitle"), -0.2 );
-		parallaxScroll( document.querySelector(".testimonials__main--subtitle"), -0.2 );
-		//parallaxScroll( document.querySelector(".contact__main--subtitle"), -0.2 );
-		/*parallaxScroll( document.querySelector("#intro"), -0.1 );
-		parallaxScroll( document.querySelector("#portfolio-43"), -0.125 ); // Unisys
-		parallaxScroll( document.querySelector("#portfolio-47"), -0.15 ); // Dialogue
-		parallaxScroll( document.querySelector("#portfolio-52"), -0.1 ); // Enautics
-		parallaxScroll( document.querySelector("#portfolio-49"), -0.125 ); // Kaleidatone
-		parallaxScroll( document.querySelector("#portfolio-55"), -0.15 ); // Business
-		parallaxScroll( document.querySelector("#portfolio-62"), -0.1 ); // Segall*/
-	});
-});
+const parallaxItems = {
+	home: {
+		0: [ "hero__main", 0.1 ],
+		1: [ "hero__sub--slider", -0.15 ],
+		2: [ "scroll-bottom", -0.05 ],
+		3: [ "intro__main--subtitle", -0.1 ],
+		//4: [ "intro__copy--sub", 0.05 ],
+		5: [ "work__left", -0.025 ],
+		6: [ "work__right", 0.025 ]	
+	}
+};
+function home() {
+	parallaxScroll(parallaxItems.home);
+	document.querySelector(".intro__button").setAttribute("download", "BY-Resume");
+};
+function onScroll() {
+	//window.addEventListener( "scroll", func );	
+};
+(()=> {
+	if (document.getElementsByClassName(".page-id-598") !== null) home();
+})();
