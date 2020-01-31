@@ -25,10 +25,11 @@ Tags: single-column, dark theme, list theme, type theme
 	margin: 0 auto;
 	top: 0;
 	left: 0;
-    opacity: 0.075;
+    opacity: 0.15;
 	user-select: none; 
 	pointer-events: none; }
 .main__subtitle h2 {
+	color: var(--green);
 	font-size: calc(125px + (200 - 125) * ((99vw - 700px) / (1900 - 700)));
 	font-family: var(--rt-extra);
 	text-align: center;
@@ -36,16 +37,27 @@ Tags: single-column, dark theme, list theme, type theme
 .main__copy {}
 .main__button span {
 	padding: 0 35%; }
+.hero .scroll-bottom,
+.work__main .work__main--item .work__item--link .work__link--title h2{
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5;
+  -ms-transition: all .5s;
+  transition: all .5s;
+  transition-timing-function: cubic-bezier(0.25, 0.25, 0.005, 1); }
+
 
 /**************************************
- *****************HERO*****************
+ **************HERO HOME***************
  *************************************/
 .hero.row.row-o-full-height {
-	min-height: 90vh;
-	/*overflow: hidden;*/
-	background-color: #ececec; }
+	min-height: 100vh; }
+.hero .hero__wrapper {
+	height: 100vh;
+	padding: 4% 0 0 0;
+	margin: 0 auto; }
 .hero .hero__main {
-    padding: 4% 0 0 0; }
+	padding: 0; }
 .hero .hero__main .hero__main--subtitle h4,
 .hero .hero__main .hero__main--title h1,
 .hero .hero__main .hero__main--copy p {
@@ -56,18 +68,17 @@ Tags: single-column, dark theme, list theme, type theme
 	margin-left: -7px;
 	margin-bottom: 15px; }
 .hero .hero__main .hero__main--copy p {
-	font-family: var(--rt--medium);
-    font-size: 20px; }
+	font-family: var(--rt--medium); }
 .hero .hero__sub {
 	position: absolute;
+	top: 0;
     right: 0; }
 .hero .hero__sub .hero__sub--slider {
 	width: 65%;
-	margin: 0 auto;
 	overflow: hidden; }
 .hero .hero__sub .hero__sub--slider .vc_slide,
 .hero .hero__sub .hero__sub--slider img {
-	height: 100vh; }
+	height: 95vh; }
 .hero .hero__sub .vc_inner {
 	height: 100%;
 	text-align: center; }
@@ -76,7 +87,9 @@ Tags: single-column, dark theme, list theme, type theme
 	overflow: visible;
     object-fit: cover; }
 .hero .scroll-bottom {
-	bottom: -45px; }
+	bottom: 0; }
+.scroll-bottom.style1:hover {
+	bottom: 25px; }
 .hero .scroll-bottom,
 .scroll-bottom.style1:before,
 .scroll-bottom.style1>div {
@@ -84,10 +97,6 @@ Tags: single-column, dark theme, list theme, type theme
 .scroll-bottom.style1>div:before,
 .scroll-bottom.style1>div:after {
 	bottom: 0; }
-/*.scroll-bottom.style1>div:before {
-	right: 1px; }
-.scroll-bottom.style1>div:after {
-	left: 1px; }*/
 .scroll-bottom.style1:hover:before {
     -moz-transform: scaleY(.85);
     -ms-transform: scaleY(.85);
@@ -102,24 +111,34 @@ Tags: single-column, dark theme, list theme, type theme
  ****************INTRO*****************
  *************************************/
 .intro {
-	position: relative;
-	margin: 20vh 0;
-	/*margin: 20vh 0 5vh 0;*/
-    padding: 0;
-    width: 100%;
+	width: 100%;
     max-width: 100%;
+	height: 100%;
+	padding: 0;
     float: none; }
 .intro .intro__main {
+	position: relative;
 	text-align: center;
-    margin: 0 auto;
+    margin: 20vh 0;
     padding: 0;
     float: none; }
-.intro .intro__main .intro__main--title h4 {
-	text-align: center; }
 .intro .intro__main .intro__main--subtitle {
-	top: 50%; }
-/*.intro .intro__main .intro__button span {
-	padding: 0 30%; }*/
+	width: 40%; 
+	top: -15%;
+	left: 3%;
+	margin: 0;
+	padding: 0; }
+.intro .intro__main .intro__main--subtitle h2 {
+	line-height: 1em;
+    text-align: left; }
+.intro .intro__main .intro__copy {
+	max-width: 85%; }
+.intro .intro__main .intro__copy .intro__copy__main h5 {
+	margin-top: -17px;
+	text-align: left; }
+.intro .intro__main .intro__copy .intro__copy--sub p {
+	padding: 12% 0 6% 0; }
+
 
 /**************************************
  *****************WORK*****************
@@ -127,8 +146,26 @@ Tags: single-column, dark theme, list theme, type theme
 .work {
 	margin-bottom: 10vh;
 	text-align: center; }
+.work__main .work__main--item {
+	flex: 0 0 100%;
+    max-width: 90%;
+	right: 0;
+    padding: 0;
+	margin: 0 auto;
+	margin-bottom: 75px !important;
+    border-radius: 15px;
+    overflow: hidden; }
+.work__main .work__left {
+	margin-top: -5%; }
+.work__main .work__main--copy {
+	text-align: left;
+	padding: 0 125px; }
+.work__main .work__main--copy p {
+	padding: 50px 0; }
+.work__main .work__main--item .work__item--link {
+	background: white !important; }
 .work__main .work__main--item .work__item--link .work__link--title {
-	overflow: visible;
+	overflow: hidden;
 	min-width: 100%;
     width: 100%; }
 .work__main .work__main--item .work__item--link .work__link--title h2 {
@@ -137,28 +174,40 @@ Tags: single-column, dark theme, list theme, type theme
 	margin-left: -4px;
 	text-align: left;
 	width: 100%;
-    max-width: 100%; }
-/*#portfolio-43 { margin-top:10%; }  /* Unisys */
-/*#portfolio-47 { margin-top:0; }  /* Dialogue */
-/*#portfolio-52 { margin-top:0; }  /* Enautics */
-/*#portfolio-49 { margin-top:15%; }  /* Kaleida */
-/*#portfolio-55 { margin-top:10%; } /* Business */
-/*#portfolio-62 { margin-top:0; } /* Segall */
+    max-width: 100%;
+  	transition-timing-function: cubic-bezier(0.25, 0.25, 0.005, 1);
+    transform: translateY(100%); }
+.work__main .work__main--item:hover .work__item--link .work__link--title h2 {
+	transform: translateY(0); }
 .work__main .work__button {
 	margin-top: 5%; }
+
 
 /**************************************
  ************TESTIMONIALS**************
  *************************************/
 .testimonials {
 	position: relative;
-	overflow: hidden; }
+	overflow: hidden;
+	padding: 15vh 0;
+	background-color: var(--lightbrown); }
 .testimonials__main {
 	margin: 0 auto; }
 .testimonials__main--subtitle {
-	top: 150%; }
+	top: 125%; }
+.testimonials__main--subtitle h2 {
+	color: var(--darkbrown); }
 .thb-testimonials.style1 blockquote p {
 	text-align: center; }
+.thb-testimonials.style1 blockquote p,
+.thb-testimonials.style1 div cite,
+.thb-testimonials.style1 div span {
+	color: white; }
+.thb-testimonials .slick-dots li {
+	color: var(--darkbrown); }
+.thb-testimonials .slick-dots li.slick-active {
+	background-color: white; }
+
 
 /**************************************
  ***************CONTACT****************
@@ -191,3 +240,13 @@ Tags: single-column, dark theme, list theme, type theme
 	width: 16px; }
 
 
+/********************************************************
+ * ********************PORTFOLIO*************************
+ * *****************************************************/
+.folio__header--item {
+	position: relative;
+	z-index: 0; 
+	user-select: none;
+	pointer-events: none; }
+.folio__header--item.overlap .folio__overlap--img {
+	margin-top: -40%; }
