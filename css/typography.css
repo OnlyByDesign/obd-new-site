@@ -1,0 +1,94 @@
+:root {
+	--rt-light: "rt_ralewaylight", sans-serif;
+	--rt-reg: "rt_ralewayregular", sans-serif;
+	--rt-med: "rt_ralewaysemibold", sans-serif;
+	--rt-semi: "rt_ralewaysemibold", sans-serif;
+	--rt-bold: "rt_ralewaybold", sans-serif;
+	--rt-extra: "rt_ralewayextrabold", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, em, body, html, input, textarea, strong {
+    padding: 0;
+    margin: 0;
+    font-kerning: normal;
+}
+h1, h2, h3, h4, h5, h6, p {
+  text-align: left;
+}
+h1 {
+  font-family: var(--rt-bold);
+  font-size: calc(62px + (155 - 62) * ((99vw - 700px) / (1900 - 700)));
+  letter-spacing: -2px;
+	line-height: 1.1em;
+}
+h2 {
+  font-family: var(--rt-bold);
+  font-size: calc(60px + (110 - 60) * ((99vw - 700px) / (1900 - 700)));
+  letter-spacing: 1px;
+}
+h3 {
+  	font-family: var(--rt-med);
+  	font-size: calc(50px + (72 - 50) * ((100vw - 300px) / (1900 - 300)));
+	letter-spacing: .15rem;
+}
+h4 {
+  font-family: var(--rt-med);
+  font-size: calc(36px + (50 - 36) * ((100vw - 300px) / (1900 - 300)));
+  font-style: normal;
+  letter-spacing: 2px;
+}
+h5 {
+	font-family: var(--rt-med);
+	font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1900 - 300)));
+	letter-spacing: .025em;
+}
+h6 {
+  font-family: var(--rt-reg);
+  color: black;
+  font-size: 15px;
+  font-style: italic;
+}
+p {
+  font-family: var(--rt-reg);
+  font-size: calc(16px + (18 - 16) * ((99vw - 700px) / (1900 - 700)));
+  letter-spacing: .11rem;
+  font-style: normal;
+  line-height: 36px;
+}
+ul, ul li {
+  font-family: var(--rt-reg);
+  font-size: 19px;
+  line-height: 32px;
+  list-style: none;
+  list-style-type: none;
+}
+span {
+  font-family: var(--rt-semi);
+}
+a {
+  font-family: var(--rt-med);
+  text-decoration: none;
+}
+@media screen and (max-width: 1560px) { }
+@media screen and (max-width: 1024px) {
+	h2 {
+		line-height: 3.5rem;
+	}
+	h3 {
+		line-height: 2.5rem;
+	}
+}
+@media screen and (max-width: 768px) { 
+	h2 {
+		font-size: 52px;
+		letter-spacing: 0;
+		word-break: break-word; 
+	}
+	h4 {
+		font-size: 20px; 
+	}
+	p {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 768px) { }
+@media screen and (max-width: 500px) { }

@@ -1,9 +1,7 @@
-@import url("css/normalize.css");
 @import url("css/reset.css");
-@import url("css/kindling.css");
+@import url("css/normalize.css");
 @import url("css/fonts.css");
-@import url("css/typography.css");
-@import url("css/colors.css");
+@import url("css/kindling.css");
 @import url("css/navigation.css");
 @import url("css/responsive.css");
 /*
@@ -16,6 +14,9 @@
  Version: 1.0.0
  Tags: single-column, dark theme, list theme, type theme
  */
+/**************************************
+ **************UNIVERSAL***************
+ *************************************/
 .main__subtitle {
   position: absolute;
   width: 100%;
@@ -53,65 +54,62 @@
   padding: 4% 0 0 0;
   margin: 0 auto;
 }
-.hero .hero__wrapper .hero__main {
+.hero .hero__main {
   padding: 0;
 }
-.hero .hero__wrapper .hero__main .hero__main--subtitle h4, .hero .hero__wrapper .hero__main .hero__main--title h1, .hero .hero__wrapper .hero__main .hero__main--copy p {
+.hero .hero__main .hero__main--subtitle h4, .hero .hero__main .hero__main--title h1, .hero .hero__main .hero__main--copy p {
   text-align: left;
 }
-.hero .hero__wrapper .hero__main .hero__main--subtitle {
+.hero .hero__main .hero__main--subtitle {
   margin-bottom: 10px;
 }
-.hero .hero__wrapper .hero__main .hero__main--title {
+.hero .hero__main .hero__main--title {
   margin-left: -7px;
   margin-bottom: 15px;
 }
-.hero .hero__wrapper .hero__main .hero__main--copy p {
+.hero .hero__main .hero__main--copy p {
   font-family: var(--rt--medium);
 }
-.hero .hero__wrapper .hero__sub {
+.hero .hero__sub {
   position: absolute;
   top: 0;
   right: 0;
 }
-.hero .hero__wrapper .hero__sub .hero__sub--slider {
+.hero .hero__sub .hero__sub--slider {
   width: 65%;
   overflow: hidden;
 }
-.hero .hero__wrapper .hero__sub .hero__sub--slider .vc_slide, .hero .hero__wrapper .hero__sub .hero__sub--slider img {
+.hero .hero__sub .hero__sub--slider .vc_slide, .hero .hero__sub .hero__sub--slider img {
   height: 95vh;
 }
-.hero .hero__wrapper .hero__sub .hero__sub--slider .vc_inner {
+.hero .hero__sub .vc_inner {
   height: 100%;
   text-align: center;
 }
-.hero .hero__wrapper .hero__sub .hero__sub--slider img {
+.hero .hero__sub .hero__sub--slider img {
   width: auto;
   overflow: visible;
   object-fit: cover;
 }
-.hero .scroll-bottom.style1 {
+.hero .scroll-bottom {
   bottom: 0;
 }
-.hero .scroll-bottom.style1:before, .hero .scroll-bottom.style1 > div {
-  height: 100px;
-}
-.hero .scroll-bottom.style1 > div:before, .hero .scroll-bottom.style1 > div:after {
-  bottom: 0;
-}
-.hero .scroll-bottom.style1:hover {
+.scroll-bottom.style1:hover {
   bottom: 25px;
 }
-.hero .scroll-bottom.style1:hover:before {
+.hero .scroll-bottom, .scroll-bottom.style1:before, .scroll-bottom.style1 > div {
+  height: 100px;
+}
+.scroll-bottom.style1 > div:before, .scroll-bottom.style1 > div:after {
+  bottom: 0;
+}
+.scroll-bottom.style1:hover:before {
   -moz-transform: scaleY(0.85);
   -ms-transform: scaleY(0.85);
   -webkit-transform: scaleY(0.85);
   transform: scaleY(0.85);
 }
-.hero .scroll-bottom.style1:hover:before, .hero .scroll-bottom.style1:hover > div {
-  height: 75px;
-}
-.hero .scroll-bottom.style1:hover > div:before, .hero .scroll-bottom.style1:hover > div:after {
+.scroll-bottom.style1:hover > div:before, .scroll-bottom.style1:hover > div:after {
   bottom: 15%;
 }
 /****************INTRO****************/
@@ -155,7 +153,7 @@
   margin-bottom: 10vh;
   text-align: center;
 }
-.work .work__main .work__main--item {
+.work__main .work__main--item {
   flex: 0 0 100%;
   max-width: 90%;
   right: 0;
@@ -165,15 +163,25 @@
   border-radius: 15px;
   overflow: hidden;
 }
-.work .work__main .work__main--item .work__item--link {
+.work__main .work__left {
+  margin-top: -5%;
+}
+.work__main .work__main--copy {
+  text-align: left;
+  padding: 0 12.5%;
+}
+.work__main .work__main--copy p {
+  padding: 50px 0;
+}
+.work__main .work__main--item .work__item--link {
   background: white !important;
 }
-.work .work__main .work__main--item .work__item--link .work__link--title {
+.work__main .work__main--item .work__item--link .work__link--title {
   overflow: hidden;
   min-width: 100%;
   width: 100%;
 }
-.work .work__main .work__main--item .work__item--link .work__link--title h2 {
+.work__main .work__main--item .work__item--link .work__link--title h2 {
   line-height: 1.1em;
   text-transform: capitalize;
   margin-left: -4px;
@@ -183,20 +191,10 @@
   transition-timing-function: cubic-bezier(0.25, 0.25, 0.005, 1);
   transform: translateY(100%);
 }
-.work .work__main .work__main--item:hover .work__item--link .work__link--title h2 {
+.work__main .work__main--item:hover .work__item--link .work__link--title h2 {
   transform: translateY(0);
 }
-.work .work__main .work__left {
-  margin-top: -5%;
-}
-.work .work__main .work__main--copy {
-  text-align: left;
-  padding: 0 12.5%;
-}
-.work .work__main .work__main--copy p {
-  padding: 50px 0;
-}
-.work .work__main .work__button {
+.work__main .work__button {
   width: 75%;
   margin-top: 5%;
 }
@@ -207,25 +205,25 @@
   padding: 15vh 0;
   background-color: var(--lightbrown);
 }
-.testimonials .testimonials__main {
+.testimonials__main {
   margin: 0 auto;
 }
-.testimonials .testimonials__main .testimonials__main--subtitle {
+.testimonials__main--subtitle {
   top: 125%;
 }
-.testimonials .testimonials__main .testimonials__main--subtitle h2 {
+.testimonials__main--subtitle h2 {
   color: var(--darkbrown);
 }
-.testimonials .testimonials__main .testimonials__main--subtitle .thb-testimonials .style1 blockquote p {
+.thb-testimonials.style1 blockquote p {
   text-align: center;
 }
-.testimonials .testimonials__main .testimonials__main--subtitle .thb-testimonials .style1 blockquote p, .testimonials .testimonials__main .testimonials__main--subtitle .thb-testimonials .style1 div cite, .testimonials .testimonials__main .testimonials__main--subtitle .thb-testimonials .style1 div span {
+.thb-testimonials.style1 blockquote p, .thb-testimonials.style1 div cite, .thb-testimonials.style1 div span {
   color: white;
 }
-.testimonials .testimonials__main .testimonials__main--subtitle .thb-testimonials .slick-dots li {
+.thb-testimonials .slick-dots li {
   color: var(--darkbrown);
 }
-.testimonials .testimonials__main .testimonials__main--subtitle .thb-testimonials .slick-dots li.slick-active {
+.thb-testimonials .slick-dots li.slick-active {
   background-color: white;
 }
 /**************CONTACT****************/
@@ -234,35 +232,35 @@
   text-align: center;
   margin: 15vh 0;
 }
-.contact .contact__main--subtitle {
+.contact__main--subtitle {
   display: none;
   top: 150%;
 }
-.contact .wpcf7 .contact__main--item {
+.contact__main--item {
   text-align: left;
 }
-.contact .wpcf7 .contact__main--item.col-6 {
+.contact__main--item.col-6 {
   width: 48%;
   display: inline-block;
 }
-.contact .wpcf7 .contact__main--item.col-12 {
-  width: 100%;
-}
-.contact .wpcf7 .contact__main--item.contact__main--name {
+.contact__main--name {
   float: left;
 }
-.contact .wpcf7 .contact__main--item.contact__main--email {
+.contact__main--email {
   float: right;
 }
-.contact .wpcf7 .contact__main--submit input[type="submit"] {
+.contact__main--item.col-12 {
+  width: 100%;
+}
+.contact__main--submit input[type="submit"] {
   color: black;
   text-transform: uppercase;
   background: transparent;
 }
-.contact .wpcf7 .contact__main--submit span.ajax-loader {
+.wpcf7 .contact__main--submit span.ajax-loader {
   width: unset;
 }
-.contact .wpcf7 .contact__main--submit span.ajax-loader.is-active {
+.wpcf7 .contact__main--submit span.ajax-loader.is-active {
   width: 16px;
 }
 /********************************************************
@@ -285,7 +283,7 @@
 .services {
   margin: 10vh 0;
 }
-.services .services__copy {
+.services__copy {
   padding: 0 5vw;
 }
 /********************************************************

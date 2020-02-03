@@ -1,0 +1,270 @@
+/*
+Theme Name: Werkstatt Child
+Theme URI: https://themeforest.net/item/werkstatt-creative-portfolio-theme/17870799
+Description: This will do until I can put more time into it
+Author: Benjamin Yannella
+Author URI: http://onlyby.design/
+Template: werkstatt
+Version: 1.0.0
+Tags: single-column, dark theme, list theme, type theme
+*/
+@import url("css/reset.css");
+@import url("css/normalize.css");
+@import url("css/fonts.css");
+@import url("css/kindling.css");
+@import url("css/navigation.css");
+@import url("css/responsive.css");
+
+/**************************************
+ **************UNIVERSAL***************
+ *************************************/
+.main__title {}
+.main__subtitle {
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+    opacity: 0.15;
+	user-select: none; 
+	pointer-events: none; }
+.main__subtitle h2 {
+	color: var(--green);
+	font-size: calc(125px + (200 - 125) * ((99vw - 700px) / (1900 - 700)));
+	font-family: var(--rt-extra);
+	text-align: center;
+	text-transform: lowercase; }
+.main__copy {}
+.main__button span {
+	padding: 0 35%; }
+.hero .scroll-bottom,
+.work__main .work__main--item .work__item--link .work__link--title h2{
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5;
+  -ms-transition: all .5s;
+  transition: all .5s;
+  transition-timing-function: cubic-bezier(0.25, 0.25, 0.005, 1); }
+
+
+/**************HERO HOME**************/
+.hero.row.row-o-full-height {
+	min-height: 100vh; }
+.hero .hero__wrapper {
+	height: 100vh;
+	padding: 4% 0 0 0;
+	margin: 0 auto; }
+.hero .hero__main {
+	padding: 0; }
+.hero .hero__main .hero__main--subtitle h4,
+.hero .hero__main .hero__main--title h1,
+.hero .hero__main .hero__main--copy p {
+	text-align: left; }
+.hero .hero__main .hero__main--subtitle {
+	margin-bottom: 10px; }
+.hero .hero__main .hero__main--title {
+	margin-left: -7px;
+	margin-bottom: 15px; }
+.hero .hero__main .hero__main--copy p {
+	font-family: var(--rt--medium); }
+.hero .hero__sub {
+	position: absolute;
+	top: 0;
+    right: 0; }
+.hero .hero__sub .hero__sub--slider {
+	width: 65%;
+	overflow: hidden; }
+.hero .hero__sub .hero__sub--slider .vc_slide,
+.hero .hero__sub .hero__sub--slider img {
+	height: 95vh; }
+.hero .hero__sub .vc_inner {
+	height: 100%;
+	text-align: center; }
+.hero .hero__sub .hero__sub--slider img {
+	width: auto;
+	overflow: visible;
+    object-fit: cover; }
+.hero .scroll-bottom {
+	bottom: 0; }
+.scroll-bottom.style1:hover {
+	bottom: 25px; }
+.hero .scroll-bottom,
+.scroll-bottom.style1:before,
+.scroll-bottom.style1>div {
+	height: 100px; }
+.scroll-bottom.style1>div:before,
+.scroll-bottom.style1>div:after {
+	bottom: 0; }
+.scroll-bottom.style1:hover:before {
+    -moz-transform: scaleY(.85);
+    -ms-transform: scaleY(.85);
+    -webkit-transform: scaleY(.85);
+	transform: scaleY(.85); }
+.scroll-bottom.style1:hover>div:before,
+.scroll-bottom.style1:hover>div:after {
+	bottom: 15%; }
+
+
+/****************INTRO****************/
+.intro {
+	width: 100%;
+    max-width: 100%;
+	height: 100%;
+	padding: 0;
+    float: none; }
+.intro .intro__main {
+	position: relative;
+	text-align: center;
+    margin: 20vh 0;
+    padding: 0;
+    float: none; }
+.intro .intro__main .intro__main--subtitle {
+	width: 40%; 
+	top: -15%;
+	left: 3%;
+	margin: 0;
+	padding: 0; }
+.intro .intro__main .intro__main--subtitle h2 {
+	line-height: 1em;
+    text-align: left; }
+.intro .intro__main .intro__copy {
+	max-width: 85%; }
+.intro .intro__main .intro__copy .intro__copy__main h5 {
+	margin-top: -17px;
+	text-align: left; }
+.intro .intro__main .intro__copy .intro__copy--sub p {
+	padding: 12% 0 6% 0; }
+
+
+/****************WORK*****************/
+.work {
+	margin-bottom: 10vh;
+	text-align: center; }
+.work__main .work__main--item {
+	flex: 0 0 100%;
+    max-width: 90%;
+	right: 0;
+    padding: 0;
+	margin: 0 auto;
+	margin-bottom: 75px !important;
+    border-radius: 15px;
+    overflow: hidden; }
+.work__main .work__left {
+	margin-top: -5%; }
+.work__main .work__main--copy {
+	text-align: left;
+	padding: 0 12.5%; }
+.work__main .work__main--copy p {
+	padding: 50px 0; }
+.work__main .work__main--item .work__item--link {
+	background: white !important; }
+.work__main .work__main--item .work__item--link .work__link--title {
+	overflow: hidden;
+	min-width: 100%;
+    width: 100%; }
+.work__main .work__main--item .work__item--link .work__link--title h2 {
+	line-height: 1.1em;
+	text-transform: capitalize;
+	margin-left: -4px;
+	text-align: left;
+	width: 100%;
+    max-width: 100%;
+  	transition-timing-function: cubic-bezier(0.25, 0.25, 0.005, 1);
+    transform: translateY(100%); }
+.work__main .work__main--item:hover .work__item--link .work__link--title h2 {
+	transform: translateY(0); }
+.work__main .work__button {
+	width: 75%;
+	margin-top: 5%; }
+
+
+/***********TESTIMONIALS**************/
+.testimonials {
+	position: relative;
+	overflow: hidden;
+	padding: 15vh 0;
+	background-color: var(--lightbrown); }
+.testimonials__main {
+	margin: 0 auto; }
+.testimonials__main--subtitle {
+	top: 125%; }
+.testimonials__main--subtitle h2 {
+	color: var(--darkbrown); }
+.thb-testimonials.style1 blockquote p {
+	text-align: center; }
+.thb-testimonials.style1 blockquote p,
+.thb-testimonials.style1 div cite,
+.thb-testimonials.style1 div span {
+	color: white; }
+.thb-testimonials .slick-dots li {
+	color: var(--darkbrown); }
+.thb-testimonials .slick-dots li.slick-active {
+	background-color: white; }
+
+
+/**************CONTACT****************/
+.contact {
+	position: relative;
+	text-align: center;
+	margin: 15vh 0; }
+.contact__main--subtitle {
+	display: none; 
+	top: 150%; }
+.contact__main--item {
+	text-align: left; }
+.contact__main--item.col-6 {
+	width: 48%;
+	display: inline-block; }
+.contact__main--name {
+	float: left; }
+.contact__main--email {
+	float: right; }
+.contact__main--item.col-12 {
+	width: 100%; }
+.contact__main--submit input[type="submit"] {
+	color: black;
+    text-transform: uppercase;
+    background: transparent; }
+.wpcf7 .contact__main--submit span.ajax-loader {
+	width: unset; }
+.wpcf7 .contact__main--submit span.ajax-loader.is-active {
+	width: 16px; }
+
+
+
+
+/********************************************************
+ * *********************ABOUT-ME*************************
+ * *****************************************************/
+.about {
+	position: relative;
+    min-height: 100vh;
+	padding: 0; }
+.about .about__copy {
+	padding: 7.5% 5% 0 10%; }
+.about .about__copy .about__copy--title { }
+.about .about__copy .about__copy--body {
+	padding: 15% 0 0 0; }
+.about .about__image {
+	padding: 0; }
+.about .about__image .about__image--main { }
+.about .about__image .about__image--main img {}
+
+.services {
+	margin: 10vh 0; }
+.services__copy {
+	padding: 0 5vw; }
+
+
+
+/********************************************************
+ * ********************PORTFOLIO*************************
+ * *****************************************************/
+.folio__header--item {
+	position: relative;
+	z-index: 0; 
+	user-select: none;
+	pointer-events: none; }
+.folio__header--item.overlap .folio__overlap--img {
+	margin-top: -40%; }
+
