@@ -156,3 +156,9 @@
 02/03/20 4:39:36: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 29
 02/03/20 5:14:51: style.scss - parse error: failed at `$::before {` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 110
 02/03/20 5:17:57: style.scss - parse error: failed at `.scroll-bottom.style1` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 124
+02/03/20 6:45:21: style.scss - parse error: failed at `font-family: $rt-med)` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/_type.scss on line 27
+02/03/20 6:45:28: style.scss - parse error: failed at `font-family: $rt-med)` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/_type.scss on line 27
+02/03/20 6:45:32: style.scss - Undefined variable $-rt-med: line: 32
+02/03/20 6:45:37: style.scss - Undefined variable $-rt-med: line: 32
+02/03/20 7:44:59: style.scss - parse error: failed at `"home";` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 14
+02/03/20 7:45:18: style.scss - parse error: failed at `"home";` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 14

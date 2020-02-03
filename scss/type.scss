@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400i,700i&display=swap');
-@use url("/base/fonts.scss");
-
+@import url("../fonts/fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400i,700i&display=swap");
 $rt-light: "rt_ralewaylight", sans-serif;
 $rt-reg: "rt_ralewayregular", sans-serif;
 $rt-med: "rt_ralewaysemibold", sans-serif;
 $rt-semi: "rt_ralewaysemibold", sans-serif;
 $rt-bold: "rt_ralewaybold", sans-serif;
 $rt-extra: "rt_ralewayextrabold", sans-serif;
-
 h1, h2, h3, h4, h5, h6, p, em, body, html, input, textarea, strong {
     padding: 0;
     margin: 0;
@@ -20,7 +18,7 @@ h1 {
   font-family: $rt-bold;
   font-size: calc(62px + (155 - 62) * ((99vw - 700px) / (1900 - 700)));
   letter-spacing: -2px;
-	line-height: 1.1em;
+	line-height: 1.2em;
 }
 h2 {
   font-family: $rt-bold;

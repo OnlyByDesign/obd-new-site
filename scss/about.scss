@@ -1,0 +1,20 @@
+.about {
+	position: relative;
+	min-height: 100vh;
+	padding: 0;
+	.about__copy {
+		padding: 7.5% 5% 0 10%;
+		.about__copy--body {
+			padding: 15% 0 10% 0;
+		}
+	}
+	.about__image {
+		padding: 0;
+	}
+}
+.services {
+	margin: 10vh 0;
+	.services__copy {
+		padding: 0 5vw;
+	}
+}
