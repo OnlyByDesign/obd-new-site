@@ -2,7 +2,8 @@
 //const page = ()=> document.title.split(' ', 1).toString().toLowerCase();
 const DOM = {
 	home: document.querySelector(".page-id-598"),
-	about: document.querySelector(".page-id-594")
+	about: document.querySelector(".page-id-594"),
+	project: document.querySelector(".page-id-600")
 };
 const parallaxScroll = (parallax) => {
 	Object.values(parallax).forEach(function(current) {
@@ -19,8 +20,13 @@ const parallaxItems = {
 		5: [ "work__right", 0.025 ]	
 	},
 	about: {
-		0: [ "about__image", -0.15 ],
-		1: [ "about__copy", 0.1 ]
+		0: [ "about__copy--title", -0.1 ],
+		1: [ "about__copy--body", -0.05 ]
+	},
+	project: {
+		0: [ "portfolio__main--1", -0.05 ],
+		1: [ "portfolio__main--2", 0.05 ],
+		2: [ "portfolio__main--3", -0.05 ]
 	}
 };
 
@@ -34,8 +40,12 @@ function home() {
 function about() {
 	parallaxScroll(parallaxItems.about);
 };
+function project() {
+	parallaxScroll(parallaxItems.project);
+}
 
 (()=> {
 	if (document.body.contains(DOM.home)) home();
-	if (document.body.contains(DOM.about)) home();
+	if (document.body.contains(DOM.about)) about();
+	if (document.body.contains(DOM.project)) project();
 })();
