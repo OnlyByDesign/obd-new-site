@@ -1,7 +1,28 @@
 #mobile-menu {
-  background: #839694;
+	background: #839694;
 	.thb-mobile-menu .nav-link-mask .nav-link-mask-text {
 		color: #e0eceb;
+	}
+	.mobile-menu-top {
+		.thb-mobile-menu {
+			a {
+				font-family: var(--rt-bold);
+				font-size: 92px;
+				.nav-link-mask {
+					.nav-link-mask-text {
+						display: none;
+					}
+				}
+				&:hover {
+					opacity: 0.75;
+					.nav-link-mask {
+						.nav-link-mask-text {
+							display: none;
+						}
+					}
+				}
+			}
+		}
 	}
 	.thb-secondary-menu li {
 		position: relative;

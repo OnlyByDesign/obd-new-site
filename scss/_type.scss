@@ -1,0 +1,87 @@
+@import url("../fonts/fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400i,700i&display=swap");
+$light:  "rt_ralewaylight", sans-serif;
+$reg:    "rt_ralewayregular", sans-serif;
+$med:    "rt_ralewaysemibold", sans-serif;
+$semi:   "rt_ralewaysemibold", sans-serif;
+$bold:   "rt_ralewaybold", sans-serif;
+$extra:  "rt_ralewayextrabold", sans-serif;
+:root {
+	--rt-light:  $light;
+	--rt-reg:    $reg;
+	--rt-med:    $med;
+	--rt-semi:   $semi;
+	--rt-bold:   $bold;
+	--rt-extra:  $extra;
+}
+h1, h2, h3, h4, h5, h6, p, em, body, html, input, textarea, strong {
+	text-align: left;
+    padding: 0;
+    margin: 0;
+    font-kerning: normal;
+}
+h1, h2, h3, h4 {
+	color: var(--black);
+}
+h5, h6, p {
+	color: var(--superbrown);
+}
+h1 {
+  font-family: $bold;
+  font-size: calc(62px + (155 - 62) * ((99vw - 700px) / (1900 - 700)));
+  letter-spacing: -2px;
+	line-height: 1.2em;
+}
+h2 {
+  font-family: $bold;
+  font-size: calc(60px + (110 - 60) * ((99vw - 700px) / (1900 - 700)));
+  letter-spacing: 1px;
+}
+h3 {
+  	font-family: $med;
+  	font-size: calc(50px + (72 - 50) * ((100vw - 300px) / (1900 - 300)));
+	letter-spacing: .15rem;
+}
+h4 {
+  font-family: $med;
+  font-size: calc(36px + (50 - 36) * ((100vw - 300px) / (1900 - 300)));
+  font-style: normal;
+  letter-spacing: 2px;
+}
+h5 {
+	font-family: $med;
+	font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1900 - 300)));
+	letter-spacing: .025em;
+}
+h6 {
+  font-family: $reg;
+  color: black;
+  font-size: 15px;
+  font-style: italic;
+}
+p {
+  font-family: $reg;
+  font-size: calc(16px + (18 - 16) * ((99vw - 700px) / (1900 - 700)));
+  letter-spacing: .11rem;
+  font-style: normal;
+  line-height: 36px;
+}
+ul, ul li {
+  font-family: $reg;
+  font-size: 19px;
+  line-height: 32px;
+  list-style: none;
+  list-style-type: none;
+}
+span {
+  font-family: $semi;
+}
+a {
+  font-family: $med;
+  text-decoration: none;
+}
+@media screen and (max-width: 1560px) { }
+@media screen and (max-width: 1024px) { }
+@media screen and (max-width: 768px)  { }
+@media screen and (max-width: 768px)  { }
+@media screen and (max-width: 500px)  { }

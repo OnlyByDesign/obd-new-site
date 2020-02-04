@@ -1,12 +1,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
-@import "reset";
-@import "color";
-@import "type";
+@import "_color";
+@import "_type";
 @import "base";
+@import "reset";
 @import "nav";
 @import "home";
 @import "about";
-@import "portfolio";
+@import "projects";
 @import "contact";
 @import "blog";
 @import "post";

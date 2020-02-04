@@ -162,3 +162,83 @@
 02/03/20 6:45:37: style.scss - Undefined variable $-rt-med: line: 32
 02/03/20 7:44:59: style.scss - parse error: failed at `"home";` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 14
 02/03/20 7:45:18: style.scss - parse error: failed at `"home";` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 14
+02/03/20 8:50:40: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 25
+02/03/20 8:50:40: about.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 25
+02/03/20 8:51:01: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 25
+02/03/20 8:51:01: about.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 25
+02/03/20 8:51:08: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 25
+02/03/20 8:51:08: about.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 25
+02/03/20 8:51:14: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:51:14: about.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 25
+02/03/20 8:51:27: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:51:27: about.scss - parse error: failed at `margin: /*10vh 0;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 16
+02/03/20 8:51:29: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:51:29: about.scss - parse error: failed at `margin: /*10vh 0;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 16
+02/03/20 8:51:31: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:51:31: about.scss - parse error: failed at `margin: /*10vh 0;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 16
+02/03/20 8:51:36: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:51:36: about.scss - parse error: failed at `margin: /*10vh 0;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/about.scss on line 16
+02/03/20 8:51:41: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:51:53: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:52:02: style.scss - parse error: failed at `color: base/color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:52:04: style.scss - parse error: failed at `color: base/color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:52:27: style.scss - parse error: failed at `color: base.color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:52:33: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:53:00: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:53:03: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:53:16: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:53:42: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:54:03: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:54:11: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 25
+02/03/20 8:57:14: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 8:57:36: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 8:58:04: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 8:58:14: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 8:58:44: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 8:59:14: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 8:59:45: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 8:59:48: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:00:02: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:00:05: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:00:35: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:00:50: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:01:01: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:01:06: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:01:30: style.scss - parse error: failed at `color: base.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:05:14: style.scss - Undefined variable $green: line: 24
+02/03/20 9:05:24: style.scss - Undefined variable $green: line: 24
+02/03/20 9:05:26: style.scss - Undefined variable $green: line: 24
+02/03/20 9:05:37: style.scss - Undefined variable $green: line: 24
+02/03/20 9:05:48: style.scss - parse error: failed at `color: base.color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:09:02: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:09:04: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:09:15: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:09:20: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:10:02: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:11:04: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:11:15: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:12:02: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:12:28: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:12:32: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:12:38: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:12:40: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:12:47: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:13:18: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:13:25: style.scss - parse error: failed at `color: color.$green;` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/style.scss on line 24
+02/03/20 9:27:03: style.scss - Undefined variable $rt-bold: line: 26
+02/03/20 9:27:12: style.scss - Undefined variable $rt-bold: line: 26
+02/03/20 9:27:15: style.scss - Undefined variable $rt-bold: line: 26
+02/03/20 9:27:18: style.scss - Undefined variable $rt-bold: line: 26
+02/03/20 9:28:13: style.scss - Undefined variable $rt-bold: line: 26
+02/03/20 9:28:19: style.scss - Undefined variable $rt-bold: line: 26
+02/03/20 9:28:30: style.scss - Undefined variable $rt-bold: line: 26
+02/04/20 3:27:14: about.scss - Undefined variable $med: line: 123
+02/04/20 3:27:22: about.scss - Undefined variable $med: line: 123
+02/04/20 5:03:46: style.scss - parse error: failed at `--superbrown: $sb` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/_color.scss on line 10
+02/04/20 5:03:46: style.scss - parse error: failed at `--superbrown: $sb` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/_color.scss on line 10
+02/04/20 6:27:01: style.scss - parse error: failed at `$.masonry {` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/portfolio.scss on line 6
+02/04/20 6:27:01: portfolio.scss - parse error: failed at `$.masonry {` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/portfolio.scss on line 6
+02/04/20 6:27:01: style.scss - parse error: failed at `$.masonry {` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/portfolio.scss on line 6
+02/04/20 6:27:01: portfolio.scss - parse error: failed at `$.masonry {` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/portfolio.scss on line 6
+02/04/20 6:27:06: style.scss - parse error: failed at `$.masonry {` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/portfolio.scss on line 6
+02/04/20 6:27:06: portfolio.scss - parse error: failed at `$.masonry {` /home/yannekci/public_html/wp-content/themes/werkstatt-child/scss/portfolio.scss on line 6
