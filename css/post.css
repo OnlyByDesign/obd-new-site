@@ -1,0 +1,9 @@
+.folio__header--item {
+  position: relative;
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+}
+.folio__header--item.overlap .folio__overlap--img {
+  margin-top: -40%;
+}

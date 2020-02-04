@@ -1,0 +1,7 @@
+.row.portfolio {
+  margin: 10% 0;
+  padding: 0 2vw;
+}
+.row.portfolio .portfolio__main--1, .row.portfolio .portfolio__main--3 {
+  margin-top: 15%;
+}

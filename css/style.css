@@ -1,0 +1,649 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("../fonts/fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400i,700i&display=swap");
+:root {
+  --lightgreen: rgba(131, 150, 148, 0.125);
+  --green: #839694;
+  --superbrown: #4d4845;
+  --darkbrown: #887f79;
+  --lightbrown: #aca9a1;
+  --black: #202020;
+}
+:root {
+  --rt-light: "rt_ralewaylight", sans-serif;
+  --rt-reg: "rt_ralewayregular", sans-serif;
+  --rt-med: "rt_ralewaysemibold", sans-serif;
+  --rt-semi: "rt_ralewaysemibold", sans-serif;
+  --rt-bold: "rt_ralewaybold", sans-serif;
+  --rt-extra: "rt_ralewayextrabold", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, em, body, html, input, textarea, strong {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-kerning: normal;
+}
+h1, h2, h3, h4 {
+  color: var(--black);
+}
+h5, h6, p {
+  color: var(--superbrown);
+}
+h1 {
+  font-family: "rt_ralewaybold", sans-serif;
+  font-size: calc(62px + (155 - 62) * ((99vw - 700px) / (1900 - 700)));
+  letter-spacing: -2px;
+  line-height: 1.2em;
+}
+h2 {
+  font-family: "rt_ralewaybold", sans-serif;
+  font-size: calc(60px + (110 - 60) * ((99vw - 700px) / (1900 - 700)));
+  letter-spacing: 1px;
+}
+h3 {
+  font-family: "rt_ralewaysemibold", sans-serif;
+  font-size: calc(50px + (72 - 50) * ((100vw - 300px) / (1900 - 300)));
+  letter-spacing: 0.15rem;
+}
+h4 {
+  font-family: "rt_ralewaysemibold", sans-serif;
+  font-size: calc(36px + (50 - 36) * ((100vw - 300px) / (1900 - 300)));
+  font-style: normal;
+  letter-spacing: 2px;
+}
+h5 {
+  font-family: "rt_ralewaysemibold", sans-serif;
+  font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1900 - 300)));
+  letter-spacing: 0.025em;
+}
+h6 {
+  font-family: "rt_ralewayregular", sans-serif;
+  color: black;
+  font-size: 15px;
+  font-style: italic;
+}
+p {
+  font-family: "rt_ralewayregular", sans-serif;
+  font-size: calc(16px + (18 - 16) * ((99vw - 700px) / (1900 - 700)));
+  letter-spacing: 0.11rem;
+  font-style: normal;
+  line-height: 36px;
+}
+ul, ul li {
+  font-family: "rt_ralewayregular", sans-serif;
+  font-size: 19px;
+  line-height: 32px;
+  list-style: none;
+  list-style-type: none;
+}
+span {
+  font-family: "rt_ralewaysemibold", sans-serif;
+}
+a {
+  font-family: "rt_ralewaysemibold", sans-serif;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+}
+html, html body {
+  height: 100;
+  margin: 0;
+  padding: 0;
+}
+html .flex-v {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+}
+html .flex-h {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  resize: horizontal;
+}
+html .clearfix::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+html .hide {
+  display: none;
+  visibility: hidden;
+}
+.main__subtitle {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  opacity: 0.15;
+  user-select: none;
+  pointer-events: none;
+}
+.main__subtitle h2 {
+  color: var(--green);
+  font-size: calc(125px + (200 - 125) * ((99vw - 700px) / (1900 - 700)));
+  font-family: var(--rt-extra);
+  text-align: center;
+  text-transform: lowercase;
+}
+.main__copy {
+  text-align: center;
+  margin: 0 auto;
+}
+.main__button span {
+  padding: 0 35%;
+}
+.hero .scroll-bottom, .work__main .work__main--item .work__item--link .work__link--title h2 {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.25, 0.25, 0.005, 1);
+}
+.quick-transition, a, .thb-borders, .page-padding, .header, .header:before, .header .logolink .logoimg, .header .row, .scroll-spy-on .thb-full-menu > li a:before, #mobile-menu .menubg-placeholder, .thb-mobile-language-switcher a:after, .thb-mobile-menu .next, .thb-mobile-menu .sub-menu li:first-child > .link_container .back, .footer-links a:before, .thb-secondary-menu li a:before, .footer .widget ul li a:before, .mobile-toggle.style2 > div span:nth-child(3), .thb-page-header .thb-blog-categories li a:after, .post .post-content p a:not(.btn):not(.button):not(.thb-iconbox):after, .post.style1.style8, .post.style4 p, .post.style4 .post-gallery, .post.style4 .post-meta, .post.style4 svg, .post.style5 p, .post.style5 .post-gallery img, .post.style5 .post-meta, .post.style5 .blog-content:after, .post.style6 .post-meta, .post.style6 .post-gallery, .post.style7 .blog-content:after, .post.style9:after, .post.style9 h5 .post-gallery, .post.style9 h5 .post-gallery .wp-post-image, .scroll-bottom.style1:before, .scroll-bottom.style1 > div:before, .scroll-bottom.style1 > div:after, .scroll-bottom.style2, .scroll-bottom.style3 > div:before, .scroll-bottom.style3 > div:after, input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, input[type="submit"], .button, .btn, input[type="submit"].thb-3d-style span, .button.thb-3d-style span, .btn.thb-3d-style span, input[type="submit"].thb-3d-style:after, .button.thb-3d-style:after, .btn.thb-3d-style:after, input[type="submit"].thb-fill-style:before, input[type="submit"].thb-fill-style:after, .button.thb-fill-style:before, .button.thb-fill-style:after, .btn.thb-fill-style:before, .btn.thb-fill-style:after, input[type="submit"].thb-text-style:before, .button.thb-text-style:before, .btn.thb-text-style:before, input[type="submit"].thb-text-style:after, .button.thb-text-style:after, .btn.thb-text-style:after, input[type="submit"].thb-text-style span:before, .button.thb-text-style span:before, .btn.thb-text-style span:before, input[type="submit"].thb-text-style span:after, .button.thb-text-style span:after, .btn.thb-text-style span:after, input[type="submit"].thb-border-line-style:after, .button.thb-border-line-style:after, .btn.thb-border-line-style:after, .btn-text.style1:before, .btn-text.style2:before, .btn-text.style2:after, .btn-text.style3 span:after, .btn-text.style4 .arrow > div, .pagination .page-numbers.prev:before, .pagination .page-numbers.next:after, .swiper-pagination.swiper-pagination-fraction, .swiper-pagination.swiper-pagination-bullets, .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet, .thb-portfolio .type-portfolio .portfolio-link, .thb-portfolio .type-portfolio.thb-corner-hover .portfolio-holder, .thb-portfolio .type-portfolio.thb-corner-hover.style2 .portfolio-inner.thb-corner-hover, .thb-portfolio .type-portfolio.style2 .portfolio-holder .portfolio-inner .thb-placeholder, .thb-portfolio .type-portfolio.style2 .portfolio-holder .portfolio-inner img, .thb-portfolio .type-portfolio.style2 h2, .thb-portfolio .type-portfolio.style3 .portfolio-holder, .thb-portfolio .type-portfolio.style5 a:before, .thb-portfolio-filter.style3 ul li a:before, .logo-holder .thb-portfolio-filter strong span, .thb-show-all .items ul li div figure, .thb-list-portfolio, .thb-list-portfolio .thb-image-side, .thb-list-portfolio .thb-content-side, .thb-list-portfolio .type-portfolio .next .menu_arrow, .thb-list-portfolio .thb-content-side .type-portfolio h1, .thb-list-portfolio .thb-content-side .type-portfolio .thb-categories, .thb-list-portfolio .thb-content-side .type-portfolio h3, .thb_row_pagination li, .thb_row_pagination li span, .portfolio_nav .center_link svg, .portfolio_nav .center_link svg path, .portfolio_nav svg, .portfolio_nav .post_nav_link .inner img, .thb-portfolio-share, .thb-portfolio-share strong span, .portfolio-detail .post-content p a:not(.btn):not(.button):after, .post-gallery .wp-video, .swiper-container.footer_style2 .swiper-navigation.footer_style2 .swiper-button-prev, .swiper-container.footer_style2 .swiper-navigation.footer_style2 .swiper-button-next, .swiper-container .thb-swiper-pagination .swiper-pagination-bullet h6, .swiper-container .swiper-nav span, .swiper-container .swiper-nav .thb-arrow, .swiper-container.style1 .swiper-navigation svg, .swiper-container.style5 .segmenter__piece-parallax, .slick-slide, .slick-nav span, .slick-dots li, .mfp-close-btn-in button.mfp-close, .mfp-zoom-in .mfp-with-anim, .mfp-zoom-in .mfp-iframe-scaler, .mfp-zoom-in .mfp-inline-holder, .mfp-zoom-in.mfp-bg, .mfp-zoom-out .mfp-with-anim, .mfp-zoom-out.mfp-bg, .widget.woo h6:before, .instagram-row figure, .instagram-row figure span, .thb-client-row.thb-opacity.with-accent .thb-client, .thb-client-row .thb-client img, .thb-team-row .slick.centered .slick-slide, .thb-team-row .thb-team-member .team-information, .thb-device .thb-iphone .screen .slick-slide, .thb_image_link img, .thb_image_link .thb-image-inner .thb-portfolio-video, #scroll_to_top svg, .wpb_text_column a:after, .thb-iconbox, .thb-iconbox.type3, .thb-iconbox.type3:after, .products .product.thb_hover .product_thumbnail_hover, .products .product .ajax_add_to_cart, .products .product .add_to_cart_button, .products .product .product_type_variable, .products .product .product_type_grouped, .products .product .product_type_external, .products .product .ajax_add_to_cart span, .products .product .add_to_cart_button span, .products .product .product_type_variable span, .products .product .product_type_grouped span, .products .product .product_type_external span, .product-detail .woocommerce-tabs .tabs li a:after {
+  -webkit-transition: all 0.75s;
+  -moz-transition: all 0.75s;
+  -o-transition: all 0.75;
+  -ms-transition: all 0.75s;
+  transition: all 0.75s;
+  transition-timing-function: cubic-bezier(0.25, 0.25, 0.005, 1);
+}
+#mobile-menu {
+  background: #839694;
+}
+#mobile-menu .thb-mobile-menu .nav-link-mask .nav-link-mask-text {
+  color: #e0eceb;
+}
+#mobile-menu .mobile-menu-top .thb-mobile-menu a {
+  font-family: var(--rt-bold);
+  font-size: 92px;
+}
+#mobile-menu .mobile-menu-top .thb-mobile-menu a .nav-link-mask .nav-link-mask-text {
+  display: none;
+}
+#mobile-menu .mobile-menu-top .thb-mobile-menu a:hover {
+  opacity: 0.75;
+}
+#mobile-menu .mobile-menu-top .thb-mobile-menu a:hover .nav-link-mask .nav-link-mask-text {
+  display: none;
+}
+#mobile-menu .thb-secondary-menu li {
+  position: relative;
+  overflow: inherit;
+  vertical-align: bottom;
+}
+#mobile-menu .thb-secondary-menu li a:hover {
+  margin-bottom: auto;
+  height: 30px;
+  padding-bottom: 15px;
+  will-change: auto;
+}
+#mobile-menu .thb-secondary-menu li a:hover:before {
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: white;
+}
+#mobile-menu #mobile-menu.style2 .menu-footer {
+  margin-bottom: 10px;
+}
+.footer {
+  position: relative;
+  min-height: 60vh;
+}
+.footer .footer__main {
+  width: 35%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 26%;
+  left: 0;
+  right: 0;
+}
+.footer .footer__main .textwidget {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  resize: horizontal;
+}
+.footer .footer__main a {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  align-self: flex-end;
+}
+.footer .footer__main a img {
+  max-width: 40px;
+  max-height: 40px;
+  vertical-align: bottom;
+  opacity: 0.9;
+}
+.footer .footer__main a img:hover {
+  opacity: 1;
+}
+.footer .footer__sub {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+}
+.footer .footer__sub p {
+  text-align: center;
+}
+/************************************
+ ****************HERO****************
+ ************************************/
+.hero.row.row-o-full-height {
+  min-height: 100vh;
+}
+.hero .hero__wrapper {
+  height: 100vh;
+  padding: 4% 0 0 0;
+  margin: 0 auto;
+}
+.hero .hero__wrapper .hero__main {
+  padding: 0;
+}
+.hero .hero__wrapper .hero__main--subtitle h4, .hero .hero__wrapper .hero__main--title h1, .hero .hero__wrapper .hero__main--copy p {
+  text-align: left;
+}
+.hero .hero__wrapper .hero__main--subtitle {
+  margin-bottom: 10px;
+}
+.hero .hero__wrapper .hero__main--title {
+  margin-left: -7px;
+  margin-bottom: 15px;
+}
+.hero .hero__wrapper .hero__main--copy p {
+  font-family: var(--rt--medium);
+}
+.hero .hero__wrapper .hero__sub {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero .hero__wrapper .hero__sub--slider {
+  width: 65%;
+  overflow: hidden;
+}
+.hero .hero__wrapper .hero__sub--slider .vc_slide, .hero .hero__wrapper .hero__sub--slider img {
+  height: 95vh;
+}
+.hero .hero__wrapper .hero__sub--slider .vc_inner {
+  height: 100%;
+  text-align: center;
+}
+.hero .hero__wrapper .hero__sub--slider img {
+  width: auto;
+  overflow: visible;
+  object-fit: cover;
+}
+.hero .scroll-bottom.style1 {
+  bottom: 5%;
+}
+.hero .scroll-bottom.style1:before, .hero .scroll-bottom.style1 > div {
+  height: 100px;
+}
+.hero .scroll-bottom.style1 > div:before, .hero .scroll-bottom.style1 > div:after {
+  bottom: 0;
+}
+.hero .scroll-bottom.style1:hover:before {
+  -moz-transform: scaleY(0.85);
+  -ms-transform: scaleY(0.85);
+  -webkit-transform: scaleY(0.85);
+  transform: scaleY(0.85);
+}
+.hero .scroll-bottom.style1:hover:before, .hero .scroll-bottom.style1:hover > div {
+  height: 75px;
+}
+.hero .scroll-bottom.style1:hover > div:before, .hero .scroll-bottom.style1:hover > div:after {
+  bottom: 15%;
+}
+/****************INTRO****************/
+.intro {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0;
+  float: none;
+}
+.intro.home {
+  margin: 12vh auto 20vh auto;
+}
+.intro.projects {
+  margin: 10vh auto 5vh auto;
+}
+.intro.projects p {
+  text-align: center;
+}
+.intro .intro__main {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding: 0;
+  float: none;
+}
+.intro .intro__main--subtitle {
+  width: 40%;
+  top: -15%;
+  left: 3%;
+  margin: 0;
+  padding: 0;
+}
+.intro .intro__main--subtitle h2 {
+  line-height: 1em;
+  text-align: left;
+}
+.intro .intro__main .intro__copy {
+  max-width: 85%;
+}
+.intro .intro__main .intro__copy .intro__copy__main h5 {
+  margin-top: -17px;
+  text-align: left;
+}
+.intro .intro__main .intro__copy--sub p {
+  padding: 12% 0 6% 0;
+}
+/****************WORK*****************/
+.work {
+  margin-bottom: 10vh;
+  text-align: center;
+}
+.work .work__main--copy {
+  text-align: left;
+  padding: 0 12.5%;
+}
+.work .work__main--copy p {
+  padding: 50px 0;
+}
+.work .work__main--item {
+  flex: 0 0 100%;
+  max-width: 90%;
+  right: 0;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 75px !important;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.work .work__main--item .work__item--link {
+  background: white !important;
+}
+.work .work__main--item .work__item--link .work__link--title {
+  overflow: hidden;
+  min-width: 100%;
+  width: 100%;
+}
+.work .work__main--item .work__item--link .work__link--title h2 {
+  line-height: 1.1em;
+  text-transform: capitalize;
+  margin-left: -4px;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  transition-timing-function: cubic-bezier(0.25, 0.25, 0.005, 1);
+  transform: translateY(100%);
+}
+.work .work__main--item:hover .work__item--link .work__link--title h2 {
+  transform: translateY(0);
+}
+.work .work__main .work__left {
+  margin-top: -5%;
+}
+.work .work__main .work__button {
+  width: 75%;
+  margin-top: 5%;
+}
+/**************FORM****************/
+.contact {
+  position: relative;
+  text-align: center;
+  padding: 15vh 5vw;
+  margin: 0;
+  background: var(--lightgreen);
+}
+.contact .contact__main--subtitle {
+  display: none;
+  top: 150%;
+}
+.contact .wpcf7 .contact__main--item {
+  text-align: left;
+}
+.contact .wpcf7 .contact__main--item.col-6 {
+  width: 48%;
+  display: inline-block;
+}
+.contact .wpcf7 .contact__main--item.col-12 {
+  width: 100%;
+}
+.contact .wpcf7 .contact__main--item.contact__main--name {
+  float: left;
+}
+.contact .wpcf7 .contact__main--item.contact__main--email {
+  float: right;
+}
+.contact .wpcf7 .contact__main--submit input[type="submit"] {
+  color: black;
+  text-transform: uppercase;
+  background: transparent;
+}
+.contact .wpcf7 .contact__main--submit span.ajax-loader {
+  width: unset;
+}
+.contact .wpcf7 .contact__main--submit span.ajax-loader.is-active {
+  width: 16px;
+}
+.about {
+  position: relative;
+  padding: 0;
+}
+.about .about__copy {
+  padding: 7.5% 0;
+  margin: 0 auto;
+}
+.about .about__copy--body {
+  padding: 10% 0 0 0;
+}
+.about .about__image {
+  padding: 0;
+}
+/***********CLIENT-LOGOS**************/
+.clients {
+  background-color: var(--green);
+}
+.clients.row.no-row-padding {
+  padding: 10vh 0;
+}
+.clients .clients__slider--main button {
+  display: none !important;
+}
+.clients .clients__copy {
+  padding-top: 25px;
+}
+.clients .clients__copy--main {
+  margin: 0 auto;
+}
+.clients .clients__copy--main p {
+  color: white;
+  text-align: center;
+}
+.services {
+  padding: 20vh 7.5vw;
+}
+.services .services__copy {
+  padding: 0;
+  margin-left: 0;
+}
+.services .services__copy--main {
+  margin: 0;
+}
+.services .services__copy--main p {
+  margin: 50px 0 0 0;
+}
+.services .services__list {
+  padding: 0;
+  margin: 0 auto;
+}
+.services .services__list .list__item {
+  margin: 4em 0;
+}
+.services .services__list .list__item:first-child {
+  margin-top: 0;
+}
+.services .services__list .list__item:last-child {
+  margin-bottom: 0;
+}
+.services .services__list .list__item--main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.services .services__list .list__item--main img, .services .services__list .list__item--main div {
+  vertical-align: top;
+}
+.services .services__list .list__item--main img {
+  width: 50px;
+  height: 50px;
+  min-width: 1px;
+  min-height: 1px;
+  max-width: 50px;
+  max-height: 50px;
+  vertical-align: top;
+  display: inline-block;
+  flex-basis: 15%;
+  border-radius: 50%;
+  border: 1.5px solid var(--darkbrown);
+}
+.services .services__list .list__item--main div {
+  width: auto;
+  vertical-align: top;
+  display: inline-block;
+  flex-basis: 85%;
+  margin-left: auto;
+}
+.services .services__list .list__item--main div h6, .services .services__list .list__item--main div p {
+  display: inline;
+}
+.services .services__list .list__item--main div h6 {
+  font-family: var(--bold);
+  font-style: normal;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: var(--green);
+  padding-bottom: 5px;
+}
+.services .services__list .list__item--main div p {
+  line-height: 1.5em;
+  padding-left: 0.4em;
+}
+/***********TESTIMONIALS**************/
+.testimonials {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 15vh 0;
+}
+.testimonials .testimonials__main {
+  padding: 0;
+  margin: 0 auto;
+}
+.testimonials .testimonials__main--subtitle {
+  top: 125%;
+}
+.testimonials .testimonials__main--subtitle h2 {
+  color: var(--darkbrown);
+}
+.testimonials .testimonials__main .thb-testimonials .thb-testimonial blockquote {
+  padding: 0;
+}
+.testimonials .testimonials__main .thb-testimonials .thb-testimonial blockquote p {
+  font-family: var(--rt-med);
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1900 - 300)));
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  color: var(--black);
+}
+.testimonials .testimonials__main .thb-testimonials .thb-testimonial div cite {
+  margin: 0;
+  color: var(--green);
+}
+.testimonials .testimonials__main .thb-testimonials .thb-testimonial div span {
+  color: var(--darkbrown);
+}
+.testimonials .testimonials__main .thb-testimonials .slick-dots li {
+  color: var(--darkbrown);
+}
+.testimonials .testimonials__main .thb-testimonials .slick-dots li.slick-active {
+  background-color: var(--green);
+}
+/***************CTA*****************/
+.cta {
+  padding: 0 0 15vh 0;
+}
+.cta .cta__main {
+  margin: 0 auto;
+}
+.row.portfolio {
+  margin: 0 0 10% 0;
+  padding: 0 2vw;
+}
+.row.portfolio .portfolio__main--1, .row.portfolio .portfolio__main--3 {
+  margin-top: 10%;
+}
+.folio__header--item {
+  position: relative;
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+}
+.folio__header--item.overlap .folio__overlap--img {
+  margin-top: -40%;
+}
+@media only screen and (max-width: 1250px) {
+  .testimonials__main--subtitle {
+    top: 100%;
+  }
+}

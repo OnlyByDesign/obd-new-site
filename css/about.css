@@ -1,0 +1,152 @@
+.about {
+  position: relative;
+  padding: 0;
+}
+.about .about__copy {
+  padding: 7.5% 0;
+  margin: 0 auto;
+}
+.about .about__copy--body {
+  padding: 10% 0 0 0;
+}
+.about .about__image {
+  padding: 0;
+}
+/***********CLIENT-LOGOS**************/
+.clients {
+  background-color: var(--green);
+}
+.clients.row.no-row-padding {
+  padding: 10vh 0;
+}
+.clients .clients__slider--main button {
+  display: none !important;
+}
+.clients .clients__copy {
+  padding-top: 25px;
+}
+.clients .clients__copy--main {
+  margin: 0 auto;
+}
+.clients .clients__copy--main p {
+  color: white;
+  text-align: center;
+}
+.services {
+  padding: 20vh 7.5vw;
+}
+.services .services__copy {
+  padding: 0;
+  margin-left: 0;
+}
+.services .services__copy--main {
+  margin: 0;
+}
+.services .services__copy--main p {
+  margin: 50px 0 0 0;
+}
+.services .services__list {
+  padding: 0;
+  margin: 0 auto;
+}
+.services .services__list .list__item {
+  margin: 4em 0;
+}
+.services .services__list .list__item:first-child {
+  margin-top: 0;
+}
+.services .services__list .list__item:last-child {
+  margin-bottom: 0;
+}
+.services .services__list .list__item--main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.services .services__list .list__item--main img, .services .services__list .list__item--main div {
+  vertical-align: top;
+}
+.services .services__list .list__item--main img {
+  width: 50px;
+  height: 50px;
+  min-width: 1px;
+  min-height: 1px;
+  max-width: 50px;
+  max-height: 50px;
+  vertical-align: top;
+  display: inline-block;
+  flex-basis: 15%;
+  border-radius: 50%;
+  border: 1.5px solid var(--darkbrown);
+}
+.services .services__list .list__item--main div {
+  width: auto;
+  vertical-align: top;
+  display: inline-block;
+  flex-basis: 85%;
+  margin-left: auto;
+}
+.services .services__list .list__item--main div h6, .services .services__list .list__item--main div p {
+  display: inline;
+}
+.services .services__list .list__item--main div h6 {
+  font-family: var(--bold);
+  font-style: normal;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: var(--green);
+  padding-bottom: 5px;
+}
+.services .services__list .list__item--main div p {
+  line-height: 1.5em;
+  padding-left: 0.4em;
+}
+/***********TESTIMONIALS**************/
+.testimonials {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 15vh 0;
+}
+.testimonials .testimonials__main {
+  padding: 0;
+  margin: 0 auto;
+}
+.testimonials .testimonials__main--subtitle {
+  top: 125%;
+}
+.testimonials .testimonials__main--subtitle h2 {
+  color: var(--darkbrown);
+}
+.testimonials .testimonials__main .thb-testimonials .thb-testimonial blockquote {
+  padding: 0;
+}
+.testimonials .testimonials__main .thb-testimonials .thb-testimonial blockquote p {
+  font-family: var(--rt-med);
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1900 - 300)));
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  color: var(--black);
+}
+.testimonials .testimonials__main .thb-testimonials .thb-testimonial div cite {
+  margin: 0;
+  color: var(--green);
+}
+.testimonials .testimonials__main .thb-testimonials .thb-testimonial div span {
+  color: var(--darkbrown);
+}
+.testimonials .testimonials__main .thb-testimonials .slick-dots li {
+  color: var(--darkbrown);
+}
+.testimonials .testimonials__main .thb-testimonials .slick-dots li.slick-active {
+  background-color: var(--green);
+}
+/***************CTA*****************/
+.cta {
+  padding: 0 0 15vh 0;
+}
+.cta .cta__main {
+  margin: 0 auto;
+}
